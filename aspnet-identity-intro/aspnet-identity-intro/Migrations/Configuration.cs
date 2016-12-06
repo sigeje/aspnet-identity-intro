@@ -9,7 +9,7 @@ namespace aspnet_identity_intro.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(aspnet_identity_intro.Models.ApplicationDbContext context)

@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 
 namespace aspnet_identity_intro.Models
 {
@@ -16,6 +17,8 @@ namespace aspnet_identity_intro.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public DateTime BirthDate { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
